@@ -13,3 +13,25 @@
 .backToHome {
   margin: 3rem 0 0;
 }
+
+.profileImage {
+  &:hover {
+    animation: enlarge 0.3s linear forwards, tiltLeftAndRight 0.4s linear alternate infinite ;
+  }
+}
+
+@keyframes enlarge {
+  100% {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@keyframes tiltLeftAndRight {
+  75% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}

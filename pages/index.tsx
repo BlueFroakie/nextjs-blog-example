@@ -1,5 +1,7 @@
+import { useState } from "react";
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
+import Modal from "../components/modal";
 import utilStyles from "../styles/utils.module.scss";
 import Link from "next/link";
 import Date from "../components/date";
@@ -15,6 +17,7 @@ export async function getStaticProps() {
 }
 
 export default function Home({allPostsData}) {
+  const [showModal, setShowModal] = useState(false)
   return (
     <Layout home>
       <Head>
@@ -27,6 +30,11 @@ export default function Home({allPostsData}) {
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
       </section>
+
+      <button onClick={() => {setShowModal(true)}}> Show modal </button>
+      <Modal onClose={() => setShowModal(false)} show={showModal} title="Put your modal title here">
+        Eliwood
+      </ Modal>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>

@@ -1,8 +1,10 @@
+import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "./layout.module.scss";
 import utilStyles from "../styles/utils.module.scss";
 import Link from "next/link";
+import Modal from "./modal"
 
 const name = "Your Name";
 export const siteTitle = "Next.js Sample Website";
@@ -13,6 +15,9 @@ interface Props {
 };
 
 export default function Layout({ children, home }: Props) {
+
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -36,12 +41,27 @@ export default function Layout({ children, home }: Props) {
             <Image
               priority
               src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
+              className={`${utilStyles.borderCircle} ${styles.profileImage}`}
               height={144}
               width={144}
               alt=""
+              onClick={() => setShowModal(true)}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <Modal
+              onClose={() => setShowModal(false)}
+              show={showModal}
+              title="El penillo"
+            >
+              <Image
+                priority
+                src="/images/profile.jpg"
+                //className={utilStyles.borderCircle}
+                height={544}
+                width={544}
+                alt=""
+              />
+            </Modal>
           </>
         ) : (
           <>

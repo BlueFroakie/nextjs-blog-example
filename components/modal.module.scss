@@ -1,0 +1,57 @@
+$borderWhite: 1px solid #eee;
+
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  &.show {
+    opacity: 1;
+    pointer-events: visible;
+  }
+  .modalContent {
+    background-color: #ffffff;
+    width: 500px;
+    opacity: 1;
+    .modalHeader, .modalFooter {
+      padding: 10px;
+      color: #b0a205;
+      text-align: center;
+      .modalTitle {
+        margin: 0;
+      }
+    }
+    .modalBody {
+      padding: 10px;
+      border-top: $borderWhite;
+      border-bottom: $borderWhite;
+    }
+  }
+}
+
+// @keyframes opacityUp {
+//   0% {
+//     opacity: 0;
+//   }
+//   50% {
+//     opacity: 0.5;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes slideDown {
+//   0% {
+//     top: 0;
+//     opacity: 1;
+//   }
+//   100% {
+//     top: 50vh;
+//     opacity: 1;
+//   }
+// }
