@@ -57,8 +57,8 @@ export default function Layout({ children, home }: Props) {
                 priority
                 src="/images/profile.jpg"
                 //className={utilStyles.borderCircle}
-                height={544}
-                width={544}
+                height={545}
+                width={545}
                 alt=""
               />
             </Modal>
