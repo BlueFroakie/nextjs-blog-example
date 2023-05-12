@@ -40,7 +40,7 @@ export default function Layout({ children, home }: Props) {
           <>
             <Image
               priority
-              src="/images/profile.jpg"
+              src="/images/sugar-huevon.jpeg"
               className={`${utilStyles.borderCircle} ${styles.profileImage}`}
               height={144}
               width={144}
@@ -51,11 +51,11 @@ export default function Layout({ children, home }: Props) {
             <Modal
               onClose={() => setShowModal(false)}
               show={showModal}
-              title="El penillo"
+              title="Huevon del mes"
             >
               <Image
                 priority
-                src="/images/profile.jpg"
+                src="/images/sugar-huevon.jpeg"
                 //className={utilStyles.borderCircle}
                 height={544}
                 width={544}

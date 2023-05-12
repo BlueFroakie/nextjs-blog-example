@@ -35,8 +35,7 @@ const Modal = ({ children, onClose, show, title }: Props) => {
         <div className={modalStyles.modalBody}> {children} </div>
         <div className={modalStyles.modalFooter}>
           <button className={modalStyles.closeButton} onClick={onClose}>
-            {" "}
-            Close{" "}
+            Close
           </button>
         </div>
       </div>
