@@ -51,7 +51,7 @@ export default function Layout({ children, home }: Props) {
             <Modal
               onClose={() => setShowModal(false)}
               show={showModal}
-              title="Huevon del mes"
+              title="El penillo"
             >
               <Image
                 priority
