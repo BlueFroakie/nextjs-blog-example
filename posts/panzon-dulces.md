@@ -11,7 +11,7 @@ Le preguntaron al panzon como es que ha logrado tanto éxito y esto fue lo que r
 
 "Che yo no sé flaco, le hemo metido huevo y la concha de su madre de un día a otro estamos acá generando plata"
 
-Sobre los futuros planes el panzon comentó que planea construir un segundo piso donde se venderan manos de poker entre otras, dijo no poder comentar mas para no arruinar la sorpresa pero entre las cosas que pudo mencionar, la tienda contará con:
+Sobre los futuros planes el panzon comentó que planea construir un segundo piso donde se venderan manos de poker entre otros productos y servicios, dijo no poder comentar mas para no arruinar la sorpresa pero entre las cosas que pudo mencionar, la tienda contará con:
 
 - Un Xbox
 - Cable para ver el fut

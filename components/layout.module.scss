@@ -21,6 +21,13 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .profileImage {
+    border: 4px solid #18b4d7;
+    user-select: none;
+  }
+}
+
 @keyframes enlarge {
   100% {
     width: 300px;
