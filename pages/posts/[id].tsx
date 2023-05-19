@@ -27,7 +27,25 @@ export default function Post({ postData }) {
   return (
     <Layout home={false}>
       <Head>
+        {/* I want to make all of these dynamic */}
         <title>{postData.title}</title>
+        <meta
+          name="description"
+          content="Todas las actualizaciones sobre cerdos"
+          key="desc"
+        />
+        <meta
+          property="og:title"
+          content="La dulcería del panzon la está rompiendo en Reynosa"
+        />
+        <meta
+          property="og:description"
+          content="Entra a nuestro blog y averigua las ultimas noticias sobre la tienda del panzon"
+        />
+        <meta
+          property="og:image"
+          content="https://cdn.milenio.com/uploads/media/2022/01/13/unsplash_0_1_1200_747.jpg"
+        />
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>

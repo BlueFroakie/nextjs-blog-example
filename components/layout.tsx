@@ -6,7 +6,7 @@ import utilStyles from "../styles/utils.module.scss";
 import Link from "next/link";
 import Modal from "./modal"
 
-const name = "Your Name";
+const name = "El blog del cerdo";
 export const siteTitle = "Next.js Sample Website";
 
 interface Props {
@@ -42,8 +42,8 @@ export default function Layout({ children, home }: Props) {
               priority
               src="/images/profile.jpg"
               className={`${utilStyles.borderCircle} ${styles.profileImage}`}
-              height={144}
-              width={144}
+              height={250}
+              width={250}
               alt=""
               onClick={() => setShowModal(true)}
             />
@@ -68,10 +68,10 @@ export default function Layout({ children, home }: Props) {
             <Link href="/">
               <Image
                 priority
-                src="/images/profile.jpg"
-                className={utilStyles.borderCircle}
-                height={108}
-                width={108}
+                src="/images/nariz-de-puerco.jpg"
+                className={`${utilStyles.borderCircle} ${styles.profileImage}`}
+                height={128}
+                width={128}
                 alt=""
               />
             </Link>
@@ -86,7 +86,7 @@ export default function Layout({ children, home }: Props) {
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/">← Back to home</Link>
+          <Link href="/">← Pagina principal</Link>
         </div>
       )}
     </div>
