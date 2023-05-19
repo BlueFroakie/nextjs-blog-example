@@ -44,7 +44,7 @@ export default function Post({ postData }) {
         />
         <meta
           property="og:image"
-          content="https://cdn.milenio.com/uploads/media/2022/01/13/unsplash_0_1_1200_747.jpg"
+          content="https://example.com/images/cool-page.jpg"
         />
       </Head>
       <article>
